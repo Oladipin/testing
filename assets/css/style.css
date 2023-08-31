@@ -1,6 +1,8 @@
-h1, h4 {
+h1,
+h4 {
     text-align: center;
 }
+
 #welcome-image {
     background: url(../images/welcome-image.jpg) no-repeat center center;
     height: 500px;
@@ -10,7 +12,7 @@ h1, h4 {
     text-align: center;
 }
 
-#control {
+#controls {
     padding-top: 30px;
     text-align: center;
 }
@@ -40,16 +42,71 @@ h1, h4 {
 
 #outcome {
     display: flex;
-    align-items: stretch ;
+    align-items: stretch;
     justify-content: center;
     gap: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 #choice {
     display: flex;
     align-items: stretch;
     justify-content: center;
-    gap: 30px;
-    border: none;
+    gap: 40px;
+
 }
 
+#result {
+    text-align: center;
+    font-size: 200%;
+    margin-top: 30px;
+}
+
+.score-area {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+}
+
+.score-area p {
+    font-size: 125%;
+}
+
+.control {
+    /* border: none;
+    outline: none;
+    background: none; */
+}
+
+/* For larger to medium size from 450px wide and down */
+/* 
+@media screen and (max-width: 450px) {
+
+    #game-area {
+        width: 100%;
+        background-color: white
+    }
+
+    #outcome {
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        align-content: center;
+        margin-top: 3px;
+        margin-bottom: 3px;
+        
+
+    }
+
+    #choice {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+} */

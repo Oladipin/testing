@@ -12,16 +12,21 @@
     <h1 id="heading">Rock Paper Scissors</h1>
     <div id="game-area">
     <div id="outcome">
-        <img id="player-choice" src="assets/images/rock1.png" alt="rock paper scissors">
+        <img id="player-outcome" src="assets/images/rock1.png" alt="rock paper scissors">
     <h1>VS</h1>
-        <img id="player-choice" src="assets/images/rock1.png" alt="rock paper scissors">
+        <img id="computer-outcome" src="assets/images/rock1.png" alt="rock paper scissors">
     </div>
     <h4>Select Your Choice</h4>
     <div id="choice">
-        <button><img src="assets/images/rock1.png" alt="rock"></button>
-        <button><img src="assets/images/paper1.png" alt="paper"></button>
-        <button><img src="assets/images/scissors1.png" alt="scissors"></button>
+        <button class="choice-btn" data-choice="0"><img src="assets/images/rock1.png" height="70px" width="70x" alt="rock"></button>
+        <button class="choice-btn" data-choice="1"><img src="assets/images/paper1.png" height="70px" width="70px" alt="paper"></button>
+        <button class="choice-btn" data-choice="2"><img src="assets/images/scissors1.png" height="70px" width="70px" alt="scissors"></button>
     </div>
+    <p id="result">Result: <span id="result-outcome"></span></p>
+    </div>
+    <div class="score-area">
+        <p class="scores">Your Score: <span id="playerScore">0</span></p>
+        <p class="scores">Computer Score: <span id="compSCore">0</span></p>
     </div>
 
     <script src="index.js"></script>
